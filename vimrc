@@ -1,7 +1,7 @@
 " Easy version Vimrc
 set number
 set nocompatible
-filetype off
+filetype on
 set fileencodings=utf8
 
 if has("win32") || has("win64")
@@ -81,10 +81,6 @@ noremap <CR> o<Esc>
 " map backspce to delete a character
 noremap <BS> X
 
-" map ctrl+c and ctrl+v
-noremap <C-c> y
-noremap <C-v> P
-
 " cancel searched highlight
 noremap ; :nohlsearch<CR>
 
@@ -101,4 +97,6 @@ map <C-A> ggVG
 
 " Use neocomplcache
 let g:neocomplcache_enable_at_startup = 1
-
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
