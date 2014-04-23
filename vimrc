@@ -68,6 +68,8 @@ Bundle 'wesgibbs/vim-irblack'
 Bundle 'jonathanfilip/vim-lucius'
 Bundle 'jpo/vim-railscasts-theme'
 Bundle 'ywjno/vim-tomorrow-theme'
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
 
 
 filetype plugin indent on

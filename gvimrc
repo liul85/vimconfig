@@ -4,7 +4,7 @@ set linespace=2
 set vb t_vb=
 
 if has("gui_macvim")
-  set guifont=Monaco:h14
+  set guifont=Bitstream_Vera_Sans_Mono:h14
 elseif has("gui_gtk")
   set guifont=Monospace\ 14
 else
