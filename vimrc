@@ -1,7 +1,9 @@
 " Easy version Vimrc
-
+set number
 set nocompatible
 filetype off
+set fileencodings=utf-8,gbk
+let &termencoding=&encoding
 
 if has("win32") || has("win64")
   set rtp+=$VIM\vimfiles\bundle\vundle
@@ -9,6 +11,20 @@ if has("win32") || has("win64")
 else
   set rtp+=~/.vim/bundle/vundle/
   call vundle#rc()
+endif
+
+if has("gui_macvim")
+  set guifont=Anonymous\ Pro:h16
+  set linespace=2   " set the line height
+
+  " Options for Graphic version of VIM
+  set guioptions-=T "No Toolbar
+  set guioptions-=L "No left hand scrollbars
+  set guioptions-=r "No right hand scrollbars
+  set guioptions-=m "No menu bar
+
+  " Don't beep
+  set visualbell
 endif
 
 Bundle 'gmarik/vundle'
@@ -24,6 +40,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'Shougo/neocomplcache.vim'
 Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/neosnippet-snippets'
 Bundle 'scrooloose/nerdtree'
 Bundle 'cakebaker/scss-syntax.vim'
 Bundle 'AndrewRadev/splitjoin.vim'
@@ -45,7 +62,10 @@ Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'pangloss/vim-javascript'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'Lokaltog/vim-powerline'
+
+" fix chinese words display issue
+"Bundle 'Lokaltog/vim-powerline'
+
 Bundle 'thinca/vim-quickrun'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-rails'
@@ -80,8 +100,8 @@ noremap <CR> o<Esc>
 noremap <BS> X
 
 " map ctrl+c and ctrl+v
-noremap <C-c> y
-noremap <C-v> P
+" noremap <C-c> y
+" noremap <C-v> P
 
 " cancel searched highlight
 noremap ; :nohlsearch<CR>
@@ -99,3 +119,6 @@ map <C-A> ggVG
 
 " Use neocomplcache
 let g:neocomplcache_enable_at_startup = 1
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4

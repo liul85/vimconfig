@@ -2,14 +2,18 @@ set guioptions=ce
 set antialias
 set linespace=2
 set vb t_vb=
+set fileencodings=utf-8,gbk
+let &termencoding=&encoding
+set encoding=utf8
 
 if has("gui_macvim")
-  set guifont=Monaco:h14
+  set guifont=Anonymous\ Pro:h16
 elseif has("gui_gtk")
   set guifont=Monospace\ 14
 else
   set guifont=Monaco:h14
 end
+
 
 if has("win32") || has("win64")
   let Tlist_Ctags_Cmd='ctags'
@@ -29,7 +33,7 @@ if has("win32") || has("win64")
 end
 
 if has("gui_macvim")
-  set transparency=0
+  set transparency=5
 
   " move a line of text using ALT+[jk] or Comamnd+[jk] on mac
   nmap <D-j> mz:m+<cr>`z
