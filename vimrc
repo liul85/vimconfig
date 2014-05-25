@@ -1,9 +1,14 @@
 " Easy version Vimrc
 set number
 set nocompatible
+<<<<<<< HEAD
 filetype off
 set fileencodings=utf-8,gbk
 let &termencoding=&encoding
+=======
+filetype on
+set fileencodings=utf8
+>>>>>>> 1ee25cc84fd8c101ac75dbe3432ec6efe6fd12ea
 
 if has("win32") || has("win64")
   set rtp+=$VIM\vimfiles\bundle\vundle
@@ -13,6 +18,7 @@ else
   call vundle#rc()
 endif
 
+<<<<<<< HEAD
 if has("gui_macvim")
   set guifont=Anonymous\ Pro:h16
   set linespace=2   " set the line height
@@ -27,6 +33,8 @@ if has("gui_macvim")
   set visualbell
 endif
 
+=======
+>>>>>>> 1ee25cc84fd8c101ac75dbe3432ec6efe6fd12ea
 Bundle 'gmarik/vundle'
 
 Bundle 'xuhdev/SingleCompile'
@@ -62,10 +70,14 @@ Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'pangloss/vim-javascript'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'jistr/vim-nerdtree-tabs'
+<<<<<<< HEAD
 
 " fix chinese words display issue
 "Bundle 'Lokaltog/vim-powerline'
 
+=======
+Bundle 'Lokaltog/vim-powerline'
+>>>>>>> 1ee25cc84fd8c101ac75dbe3432ec6efe6fd12ea
 Bundle 'thinca/vim-quickrun'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-rails'
@@ -86,6 +98,11 @@ Bundle 'wesgibbs/vim-irblack'
 Bundle 'jonathanfilip/vim-lucius'
 Bundle 'jpo/vim-railscasts-theme'
 Bundle 'ywjno/vim-tomorrow-theme'
+<<<<<<< HEAD
+=======
+Bundle 'rizzatti/funcoo.vim'
+Bundle 'rizzatti/dash.vim'
+>>>>>>> 1ee25cc84fd8c101ac75dbe3432ec6efe6fd12ea
 
 
 filetype plugin indent on
@@ -99,10 +116,13 @@ noremap <CR> o<Esc>
 " map backspce to delete a character
 noremap <BS> X
 
+<<<<<<< HEAD
 " map ctrl+c and ctrl+v
 " noremap <C-c> y
 " noremap <C-v> P
 
+=======
+>>>>>>> 1ee25cc84fd8c101ac75dbe3432ec6efe6fd12ea
 " cancel searched highlight
 noremap ; :nohlsearch<CR>
 

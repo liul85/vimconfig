@@ -2,19 +2,28 @@ set guioptions=ce
 set antialias
 set linespace=2
 set vb t_vb=
+<<<<<<< HEAD
 set fileencodings=utf-8,gbk
 let &termencoding=&encoding
 set encoding=utf8
 
 if has("gui_macvim")
   set guifont=Anonymous\ Pro:h16
+=======
+
+if has("gui_macvim")
+  set guifont=Bitstream_Vera_Sans_Mono:h14
+>>>>>>> 1ee25cc84fd8c101ac75dbe3432ec6efe6fd12ea
 elseif has("gui_gtk")
   set guifont=Monospace\ 14
 else
   set guifont=Monaco:h14
 end
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1ee25cc84fd8c101ac75dbe3432ec6efe6fd12ea
 if has("win32") || has("win64")
   let Tlist_Ctags_Cmd='ctags'
 
@@ -33,7 +42,11 @@ if has("win32") || has("win64")
 end
 
 if has("gui_macvim")
+<<<<<<< HEAD
   set transparency=5
+=======
+  set transparency=15
+>>>>>>> 1ee25cc84fd8c101ac75dbe3432ec6efe6fd12ea
 
   " move a line of text using ALT+[jk] or Comamnd+[jk] on mac
   nmap <D-j> mz:m+<cr>`z
@@ -59,3 +72,7 @@ if has("gui_macvim")
     exec "nnoremap <D-".i."> ".i."gt"
   endfor
 endif
+<<<<<<< HEAD
+=======
+colorscheme torte
+>>>>>>> 1ee25cc84fd8c101ac75dbe3432ec6efe6fd12ea

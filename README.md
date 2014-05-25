@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 **This Vim configurations base form [kaochenlong/eddie-vim](https://github.com/kaochenlong/eddie-vim)**
 
 My personal Vim configurations and some plugins which I used in my daily job.
@@ -76,3 +77,6 @@ if you can not found `ctags` command, just find your ctags path and replace my s
     let g:tagbar_ctags_bin = '/your/path/to/ctags'
 
 and [Exuberant Ctags](http://ctags.sourceforge.net/) is recommended.
+=======
+##My vim config
+>>>>>>> 1ee25cc84fd8c101ac75dbe3432ec6efe6fd12ea
