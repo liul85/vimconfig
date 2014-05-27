@@ -60,4 +60,4 @@ if has("gui_macvim")
   endfor
 endif
 
-colorscheme torte
+" colorscheme torte
