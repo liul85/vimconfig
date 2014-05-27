@@ -6,6 +6,20 @@ set fileencodings=utf-8,gbk
 let &termencoding=&encoding
 filetype on
 set fileencodings=utf8
+set helplang=cn
+syntax on
+set nobackup
+set ruler
+set showcmd
+set showmode
+set background=dark
+colorscheme solarized
+filetype indent on
+set novisualbell
+set visualbell t_vb=
+set showmatch
+set matchtime=1
+set autoindent
 
 if has("win32") || has("win64")
   set rtp+=$VIM\vimfiles\bundle\vundle
@@ -121,3 +135,5 @@ let g:neocomplcache_enable_at_startup = 1
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+
+map <F4> :silent! NERDTreeToggle<CR>
