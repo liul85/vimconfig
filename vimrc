@@ -30,7 +30,7 @@ else
 endif
 
 if has("gui_macvim")
-  set guifont=Anonymous\ Pro:h16
+  set guifont=Monaco:h16
   set linespace=2   " set the line height
 
   " Options for Graphic version of VIM

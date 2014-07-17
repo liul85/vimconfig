@@ -7,9 +7,9 @@ let &termencoding=&encoding
 set encoding=utf8
 
 if has("gui_macvim")
-  set guifont=Anonymous\ Pro:h16
+  set guifont=Monaco:h16
 elseif has("gui_gtk")
-  set guifont=Monospace\ 14
+  set guifont=Monaco:h16
 else
   set guifont=Monaco:h14
 end
