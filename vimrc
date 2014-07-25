@@ -1,12 +1,8 @@
 " Easy version Vimrc
 set number
 set nocompatible
-filetype off
-set fileencodings=utf-8,gbk
-let &termencoding=&encoding
 filetype on
 set fileencodings=utf8
-set helplang=cn
 syntax on
 set nobackup
 set ruler
@@ -15,8 +11,6 @@ set showmode
 set background=dark
 colorscheme solarized
 filetype indent on
-set novisualbell
-set visualbell t_vb=
 set showmatch
 set matchtime=1
 set autoindent
@@ -30,7 +24,7 @@ else
 endif
 
 if has("gui_macvim")
-  set guifont=Monaco:h16
+  set guifont=Monaco:h14
   set linespace=2   " set the line height
 
   " Options for Graphic version of VIM
@@ -100,7 +94,6 @@ Bundle 'ywjno/vim-tomorrow-theme'
 Bundle 'rizzatti/funcoo.vim'
 Bundle 'rizzatti/dash.vim'
 
-
 filetype plugin indent on
 
 " =============
@@ -132,6 +125,9 @@ map <C-A> ggVG
 
 " Use neocomplcache
 let g:neocomplcache_enable_at_startup = 1
+let g:neosnippet#enable_snipmate_compatibility = 1
+
+let g:NERDTreeHighlightCursorline = 0
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
