@@ -132,4 +132,6 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 
+set tags=tags;/
+
 map <F4> :silent! NERDTreeToggle<CR>
